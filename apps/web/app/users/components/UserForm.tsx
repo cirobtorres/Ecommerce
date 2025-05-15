@@ -67,7 +67,7 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 mb-1"
+          className="block text-sm font-medium text-neutral-700 mb-1"
         >
           Nome:
         </label>
@@ -78,13 +78,13 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="w-full border border-gray-300 rounded px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+          className="w-full border border-neutral-200 rounded px-3 py-2 shadow-sm bg-neutral-100 focus:outline-none focus:ring focus:ring-blue-200"
         />
       </div>
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 mb-1"
+          className="block text-sm font-medium text-neutral-700 mb-1"
         >
           Email:
         </label>
@@ -95,14 +95,14 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full border border-gray-300 rounded px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+          className="w-full border border-neutral-200 rounded px-3 py-2 shadow-sm bg-neutral-100 focus:outline-none focus:ring focus:ring-blue-200"
         />
       </div>
       {!initialData && (
         <div>
           <label
             htmlFor="password"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-neutral-700 mb-1"
           >
             Senha:
           </label>
@@ -112,7 +112,7 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full border border-gray-300 rounded px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+            className="w-full border border-neutral-200 rounded px-3 py-2 shadow-sm bg-neutral-100 focus:outline-none focus:ring focus:ring-blue-200"
           />
         </div>
       )}
@@ -126,13 +126,13 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
         </button>
         <button
           type="button"
-          className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-8 py-2 rounded transition-colors"
+          className="bg-neutral-100 hover:bg-neutral-200 text-neutral-700 px-8 py-2 rounded transition-colors"
           onClick={handleBackToUserList}
         >
           Voltar
         </button>
       </div>
-      {isPending && <p className="text-gray-500 italic">Carregando...</p>}
+      {isPending && <p className="text-neutral-500 italic">Carregando...</p>}
       {isError && <p className="text-red-600">Erro ao salvar os dados!</p>}
       {isSuccess && (
         <p className="text-green-600">Usuário salvo com sucesso!</p>

@@ -5,7 +5,7 @@ import { UserList } from './components/UserList';
 
 export default function UsersPage() {
   return (
-    <div className="min-h-screen border border-gray-300 bg-gray-50">
+    <div className="h-full flex-1 border border-neutral-200 rounded bg-white">
       <main className="max-w-4xl mx-auto py-10 px-6">
         <header>
           <h1 className="text-3xl font-bold mb-6">Usuários</h1>

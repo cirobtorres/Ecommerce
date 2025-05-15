@@ -25,7 +25,7 @@ export function UserList() {
         <li key={user.id} className="bg-white border rounded p-4 shadow-sm">
           <div className="flex justify-between items-center">
             {' '}
-            <span className="text-gray-800 font-medium">{user.name}</span>
+            <span className="text-neutral-800 font-medium">{user.name}</span>
             <div className="flex gap-3">
               <Link
                 href={`/users/${user.id}`}

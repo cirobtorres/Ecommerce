@@ -28,20 +28,20 @@ export default function LoginPage() {
   const handleRegisterRedirect = () => router.push('/auth/register');
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-neutral-100">
       <main className="w-full max-w-sm p-6 bg-white rounded shadow">
         <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-neutral-700 mb-1"
             >
               Email:{' '}
             </label>
             <input
               id="email"
-              className="w-full border border-gray-300 rounded px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+              className="w-full border border-neutral-200 rounded bg-neutral-100 px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
               type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -50,13 +50,13 @@ export default function LoginPage() {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-neutral-700 mb-1"
             >
               Senha:{' '}
             </label>
             <input
               id="password"
-              className="w-full border border-gray-300 rounded px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+              className="w-full border border-neutral-200 rounded bg-neutral-100 px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
               type="password"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
@@ -66,7 +66,7 @@ export default function LoginPage() {
           <div className="w-full flex justify-between gap-x-2">
             <button
               type="button"
-              className="w-full bg-gray-100 hover:bg-gray-50 hover:text-gray-500 text-gray-700 font-medium py-2 px-4 rounded transition-colors"
+              className="w-full bg-neutral-100 hover:bg-neutral-50 hover:text-neutral-500 text-neutral-700 font-medium py-2 px-4 rounded transition-colors"
               onClick={handleRegisterRedirect}
             >
               Registrar
