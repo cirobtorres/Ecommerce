@@ -53,7 +53,7 @@ services:
       - /app/apps/backend/node_modules
     working_dir: /app/apps/backend
     command: sh -c "bash ./init.sh"
-    mem_limit: 384m
+    mem_limit: 1024m
     cpus: 0.5
 
   web:

@@ -78,7 +78,7 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="w-full border border-neutral-200 rounded px-3 py-2 shadow-sm bg-neutral-100 focus:outline-none focus:ring focus:ring-blue-200"
+          className="w-full border border-neutral-200 rounded-sm px-3 py-2 shadow-xs bg-neutral-100 focus:outline-hidden focus:ring-3 focus:ring-blue-200"
         />
       </div>
       <div>
@@ -95,7 +95,7 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full border border-neutral-200 rounded px-3 py-2 shadow-sm bg-neutral-100 focus:outline-none focus:ring focus:ring-blue-200"
+          className="w-full border border-neutral-200 rounded-sm px-3 py-2 shadow-xs bg-neutral-100 focus:outline-hidden focus:ring-3 focus:ring-blue-200"
         />
       </div>
       {!initialData && (
@@ -112,13 +112,13 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full border border-neutral-200 rounded px-3 py-2 shadow-sm bg-neutral-100 focus:outline-none focus:ring focus:ring-blue-200"
+            className="w-full border border-neutral-200 rounded-sm px-3 py-2 shadow-xs bg-neutral-100 focus:outline-hidden focus:ring-3 focus:ring-blue-200"
           />
         </div>
       )}
       <div className="flex justify-between">
         <button
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded disabled:opacity-50 transition-colors"
+          className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white px-4 py-2 rounded-sm disabled:opacity-50 transition-colors"
           type="submit"
           disabled={isPending}
         >
@@ -126,7 +126,7 @@ export function UserForm({ initialData, onSuccess }: Readonly<UserFormProps>) {
         </button>
         <button
           type="button"
-          className="bg-neutral-100 hover:bg-neutral-200 text-neutral-700 px-8 py-2 rounded transition-colors"
+          className="bg-neutral-100 cursor-pointer hover:bg-neutral-200 text-neutral-700 px-8 py-2 rounded-sm transition-colors"
           onClick={handleBackToUserList}
         >
           Voltar

@@ -28,8 +28,8 @@ export default function LoginPage() {
   const handleRegisterRedirect = () => router.push('/auth/register');
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-neutral-100">
-      <main className="w-full max-w-sm p-6 bg-white rounded shadow">
+    <div className="h-full flex-1 flex items-center justify-center bg-neutral-100">
+      <main className="w-full max-w-sm p-6 bg-white rounded-sm shadow-sm">
         <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -41,7 +41,7 @@ export default function LoginPage() {
             </label>
             <input
               id="email"
-              className="w-full border border-neutral-200 rounded bg-neutral-100 px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+              className="w-full border border-neutral-200 rounded-sm bg-neutral-100 px-3 py-2 shadow-xs focus:outline-hidden focus:ring-3 focus:ring-blue-200"
               type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -56,7 +56,7 @@ export default function LoginPage() {
             </label>
             <input
               id="password"
-              className="w-full border border-neutral-200 rounded bg-neutral-100 px-3 py-2 shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+              className="w-full border border-neutral-200 rounded-sm bg-neutral-100 px-3 py-2 shadow-xs focus:outline-hidden focus:ring-3 focus:ring-blue-200"
               type="password"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
@@ -66,14 +66,14 @@ export default function LoginPage() {
           <div className="w-full flex justify-between gap-x-2">
             <button
               type="button"
-              className="w-full bg-neutral-100 hover:bg-neutral-50 hover:text-neutral-500 text-neutral-700 font-medium py-2 px-4 rounded transition-colors"
+              className="w-full cursor-pointer bg-neutral-100 hover:bg-neutral-50 hover:text-neutral-500 text-neutral-700 font-medium py-2 px-4 rounded-sm transition-colors"
               onClick={handleRegisterRedirect}
             >
               Registrar
             </button>
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors"
+              className="w-full cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-sm transition-colors"
             >
               Entrar
             </button>

@@ -5,7 +5,7 @@ import { UserList } from './components/UserList';
 
 export default function UsersPage() {
   return (
-    <div className="h-full flex-1 border border-neutral-200 rounded bg-white">
+    <div className="h-full flex-1 border border-neutral-200 rounded-sm bg-white">
       <main className="max-w-4xl mx-auto py-10 px-6">
         <header>
           <h1 className="text-3xl font-bold mb-6">Usuários</h1>
@@ -18,7 +18,7 @@ export default function UsersPage() {
             </h2>
             <Link
               href="/users/new"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-sm"
             >
               Criar usuário
             </Link>

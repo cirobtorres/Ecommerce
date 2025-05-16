@@ -24,7 +24,7 @@ export default function EditUserPage() {
 
   return (
     <div className="flex items-center">
-      <main className="w-full max-w-xl mx-auto p-6 bg-white rounded shadow">
+      <main className="w-full max-w-xl mx-auto p-6 bg-white rounded-sm shadow-sm">
         <h1 className="text-2xl font-bold mb-4">Editar Usuário</h1>
         <UserForm initialData={user} />
       </main>

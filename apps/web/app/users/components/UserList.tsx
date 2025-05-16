@@ -22,7 +22,7 @@ export function UserList() {
   return (
     <ul id="user-list" className="space-y-4">
       {data.map((user: User) => (
-        <li key={user.id} className="bg-white border rounded p-4 shadow-sm">
+        <li key={user.id} className="bg-white border rounded-sm p-4 shadow-xs">
           <div className="flex justify-between items-center">
             {' '}
             <span className="text-neutral-800 font-medium">{user.name}</span>

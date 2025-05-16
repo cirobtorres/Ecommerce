@@ -21,7 +21,7 @@ export default function DeleteButton({ id }: Readonly<{ id: string }>) {
 
   return (
     <button
-      className="text-red-600 hover:text-red-800 font-medium transition-colors"
+      className="text-red-600 cursor-pointer hover:text-red-800 font-medium transition-colors"
       onClick={handleClick}
     >
       Deletar
